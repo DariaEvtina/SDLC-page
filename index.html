@@ -1,0 +1,89 @@
+<html>
+  <header>
+    <tittle>SDLC</tittle>
+  </header>
+<!--What is  a ADLC Software Development Life Cycle (SDLC)
+MVC - modal view controler-->
+<body>
+<style>
+  h1{
+    background-color: #eee;
+    color: #444;
+  }
+  p{
+    color: #444;
+  }
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+<h1>SDLC</h1>
+<p>Software Development Life Cycle</p>
+<button class="accordion">Requirement analysis</button>
+<div class="panel">
+  <p>Requirement analysis is the process of determining user expectations for a new or modified product.</p>
+</div>
+
+<button class="accordion">Defining requirements</button>
+<div class="panel">
+  <p>Defining requirements is a decision-making process to derive requirements from needs.</p>
+</div>
+
+<button class="accordion">Planning</button>
+<div class="panel">
+  <p>Software planning is organize projects and resources into phases and tasks with attainable deadlines</p>
+</div>
+<button class="accordion">Software design such as architectural design</button>
+<div class="panel">
+  <p>Architectural design is a discipline that focuses on covering and meeting the needs and demands, to create living spaces, using certain tools and especially, creativity.</p>
+</div>
+<button class="accordion">Software development</button>
+<div class="panel">
+  <p> refers to a set of computer science activities dedicated to the process of creating, designing, deploying and supporting software.</p>
+</div>
+<button class="accordion">Software Testing</button>
+<div class="panel">
+  <p> the process of evaluating and verifying that a software product or application does what it is supposed to do.</p>
+</div>
+<button class="accordion">Deployment in the Market and Maintenance</button>
+<div class="panel">
+  <p> When the system meets your approval and is ready to “go live”, we deploy it to your production environment and assist with your organization’s transition to the new system.</p>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
